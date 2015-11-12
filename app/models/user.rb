@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :tweets
 
   serialize :following, Array
-
-
+  
+  validates :username, presence: true
+  validates :username, uniqueness: true
 end

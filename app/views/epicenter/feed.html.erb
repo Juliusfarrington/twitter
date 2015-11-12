@@ -3,10 +3,10 @@
 <p>Here is what your friends are saying:</p>
 
 <div>
- <% @following_tweets.each do |f| %>
+ <% @following_tweets.each do |f|%>
    <div> 
-       <p> <%= f.message %> </p>
-       <p><strong><em> <%= f.user.username %> </em></strong></p>
+       <p><%= f.message %></p>
+       <p><strong><em><%= f.user.username %></em></strong></p>
    </div>
-</div>
 <% end %>  
+</div>
